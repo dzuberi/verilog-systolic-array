@@ -1,0 +1,564 @@
+Loading db file '/nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : systolic_array
+Version: J-2014.09
+Date   : Sun Feb 24 01:57:20 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db)
+
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+systolic_array                            2.627    7.617 3.29e+08   10.573 100.0
+  add_108 (systolic_array_DW01_inc_0)  4.54e-04 8.58e-04 5.80e+05 1.89e-03   0.0
+  gen3_7__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_0)
+                                       4.03e-02    0.104 4.81e+06    0.149   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_0_DW01_add_0)
+                                       2.74e-03 5.92e-03 7.16e+05 9.38e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_0_DW02_mult_0)
+                                       1.62e-02 1.29e-02 2.47e+06 3.16e-02   0.3
+  gen3_7__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_1)
+                                       4.09e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_1_DW01_add_0)
+                                       2.75e-03 5.93e-03 7.16e+05 9.39e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_1_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_7__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_2)
+                                       4.08e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_2_DW01_add_0)
+                                       2.74e-03 5.92e-03 7.16e+05 9.38e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_2_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_7__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_3)
+                                       4.10e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_3_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_3_DW02_mult_0)
+                                       1.64e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_7__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_4)
+                                       4.09e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_4_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.40e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_4_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_7__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_5)
+                                       4.07e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_5_DW01_add_0)
+                                       2.73e-03 5.90e-03 7.16e+05 9.34e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_5_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_7__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_6)
+                                       3.74e-02    0.102 4.78e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_6_DW01_add_0)
+                                       2.48e-03 5.35e-03 7.14e+05 8.55e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_6_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_7__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_7)
+                                       3.73e-02    0.102 4.78e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_7_DW01_add_0)
+                                       2.48e-03 5.35e-03 7.14e+05 8.54e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_7_DW02_mult_0)
+                                       1.50e-02 1.19e-02 2.45e+06 2.93e-02   0.3
+  gen3_6__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_8)
+                                       4.08e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_8_DW01_add_0)
+                                       2.74e-03 5.92e-03 7.16e+05 9.38e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_8_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_6__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_9)
+                                       4.13e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_9_DW01_add_0)
+                                       2.75e-03 5.93e-03 7.16e+05 9.40e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_9_DW02_mult_0)
+                                       1.64e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_6__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_10)
+                                       4.13e-02    0.104 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_10_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_10_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_6__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_11)
+                                       4.15e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_11_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_11_DW02_mult_0)
+                                       1.65e-02 1.32e-02 2.47e+06 3.22e-02   0.3
+  gen3_6__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_12)
+                                       4.15e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_12_DW01_add_0)
+                                       2.76e-03 5.96e-03 7.16e+05 9.44e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_12_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_6__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_13)
+                                       4.11e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_13_DW01_add_0)
+                                       2.72e-03 5.89e-03 7.16e+05 9.33e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_13_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_6__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_14)
+                                       3.78e-02    0.102 4.78e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_14_DW01_add_0)
+                                       2.49e-03 5.36e-03 7.14e+05 8.56e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_14_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_6__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_15)
+                                       3.77e-02    0.102 4.78e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_15_DW01_add_0)
+                                       2.48e-03 5.33e-03 7.14e+05 8.52e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_15_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_5__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_16)
+                                       4.09e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_16_DW01_add_0)
+                                       2.76e-03 5.95e-03 7.16e+05 9.42e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_16_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_5__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_17)
+                                       4.16e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_17_DW01_add_0)
+                                       2.76e-03 5.97e-03 7.16e+05 9.45e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_17_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_5__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_18)
+                                       4.15e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_18_DW01_add_0)
+                                       2.76e-03 5.95e-03 7.16e+05 9.43e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_18_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_5__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_19)
+                                       4.17e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_19_DW01_add_0)
+                                       2.77e-03 5.98e-03 7.16e+05 9.47e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_19_DW02_mult_0)
+                                       1.66e-02 1.32e-02 2.47e+06 3.23e-02   0.3
+  gen3_5__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_20)
+                                       4.15e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_20_DW01_add_0)
+                                       2.76e-03 5.96e-03 7.16e+05 9.44e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_20_DW02_mult_0)
+                                       1.66e-02 1.32e-02 2.47e+06 3.22e-02   0.3
+  gen3_5__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_21)
+                                       4.14e-02    0.104 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_21_DW01_add_0)
+                                       2.74e-03 5.91e-03 7.16e+05 9.36e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_21_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_5__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_22)
+                                       3.80e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_22_DW01_add_0)
+                                       2.50e-03 5.38e-03 7.14e+05 8.59e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_22_DW02_mult_0)
+                                       1.53e-02 1.21e-02 2.45e+06 2.98e-02   0.3
+  gen3_5__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_23)
+                                       3.79e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_23_DW01_add_0)
+                                       2.49e-03 5.37e-03 7.14e+05 8.58e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_23_DW02_mult_0)
+                                       1.52e-02 1.20e-02 2.45e+06 2.97e-02   0.3
+  gen3_4__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_24)
+                                       4.07e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_24_DW01_add_0)
+                                       2.74e-03 5.91e-03 7.16e+05 9.36e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_24_DW02_mult_0)
+                                       1.62e-02 1.29e-02 2.47e+06 3.16e-02   0.3
+  gen3_4__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_25)
+                                       4.13e-02    0.104 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_25_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_25_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_4__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_26)
+                                       4.12e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_26_DW01_add_0)
+                                       2.74e-03 5.92e-03 7.16e+05 9.38e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_26_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_4__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_27)
+                                       4.14e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_27_DW01_add_0)
+                                       2.76e-03 5.96e-03 7.16e+05 9.43e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_27_DW02_mult_0)
+                                       1.64e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_4__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_28)
+                                       4.13e-02    0.104 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_28_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_28_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_4__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_29)
+                                       4.11e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_29_DW01_add_0)
+                                       2.72e-03 5.88e-03 7.16e+05 9.32e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_29_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_4__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_30)
+                                       3.78e-02    0.102 4.78e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_30_DW01_add_0)
+                                       2.48e-03 5.36e-03 7.14e+05 8.55e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_30_DW02_mult_0)
+                                       1.52e-02 1.20e-02 2.45e+06 2.96e-02   0.3
+  gen3_4__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_31)
+                                       3.76e-02    0.102 4.78e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_31_DW01_add_0)
+                                       2.47e-03 5.32e-03 7.14e+05 8.51e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_31_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_3__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_32)
+                                       4.08e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_32_DW01_add_0)
+                                       2.74e-03 5.93e-03 7.16e+05 9.38e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_32_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_3__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_33)
+                                       4.13e-02    0.104 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_33_DW01_add_0)
+                                       2.75e-03 5.93e-03 7.16e+05 9.39e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_33_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_3__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_34)
+                                       4.12e-02    0.104 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_34_DW01_add_0)
+                                       2.74e-03 5.93e-03 7.16e+05 9.39e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_34_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_3__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_35)
+                                       4.15e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_35_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_35_DW02_mult_0)
+                                       1.65e-02 1.32e-02 2.47e+06 3.21e-02   0.3
+  gen3_3__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_36)
+                                       4.14e-02    0.105 4.81e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_36_DW01_add_0)
+                                       2.75e-03 5.93e-03 7.16e+05 9.40e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_36_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_3__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_37)
+                                       4.11e-02    0.104 4.81e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_37_DW01_add_0)
+                                       2.72e-03 5.88e-03 7.16e+05 9.32e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_37_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_3__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_38)
+                                       3.78e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_38_DW01_add_0)
+                                       2.48e-03 5.35e-03 7.14e+05 8.55e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_38_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_3__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_39)
+                                       3.76e-02    0.102 4.79e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_39_DW01_add_0)
+                                       2.47e-03 5.33e-03 7.14e+05 8.51e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_39_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_2__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_40)
+                                       4.09e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_40_DW01_add_0)
+                                       2.75e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_40_DW02_mult_0)
+                                       1.64e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_2__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_41)
+                                       4.15e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_41_DW01_add_0)
+                                       2.76e-03 5.96e-03 7.16e+05 9.44e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_41_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_2__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_42)
+                                       4.14e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_42_DW01_add_0)
+                                       2.76e-03 5.95e-03 7.16e+05 9.42e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_42_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_2__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_43)
+                                       4.17e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_43_DW01_add_0)
+                                       2.77e-03 5.97e-03 7.16e+05 9.45e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_43_DW02_mult_0)
+                                       1.67e-02 1.33e-02 2.47e+06 3.25e-02   0.3
+  gen3_2__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_44)
+                                       4.16e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_44_DW01_add_0)
+                                       2.77e-03 5.97e-03 7.16e+05 9.45e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_44_DW02_mult_0)
+                                       1.65e-02 1.32e-02 2.47e+06 3.22e-02   0.3
+  gen3_2__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_45)
+                                       4.13e-02    0.104 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_45_DW01_add_0)
+                                       2.73e-03 5.89e-03 7.16e+05 9.33e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_45_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_2__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_46)
+                                       3.80e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_46_DW01_add_0)
+                                       2.49e-03 5.37e-03 7.14e+05 8.58e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_46_DW02_mult_0)
+                                       1.53e-02 1.21e-02 2.45e+06 2.99e-02   0.3
+  gen3_2__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_47)
+                                       3.79e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_47_DW01_add_0)
+                                       2.49e-03 5.37e-03 7.14e+05 8.57e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_47_DW02_mult_0)
+                                       1.52e-02 1.21e-02 2.45e+06 2.98e-02   0.3
+  gen3_1__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_48)
+                                       4.07e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_48_DW01_add_0)
+                                       2.74e-03 5.92e-03 7.16e+05 9.37e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_48_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.17e-02   0.3
+  gen3_1__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_49)
+                                       4.13e-02    0.104 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_49_DW01_add_0)
+                                       2.76e-03 5.94e-03 7.16e+05 9.41e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_49_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.18e-02   0.3
+  gen3_1__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_50)
+                                       4.11e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_50_DW01_add_0)
+                                       2.74e-03 5.91e-03 7.16e+05 9.36e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_50_DW02_mult_0)
+                                       1.63e-02 1.30e-02 2.47e+06 3.17e-02   0.3
+  gen3_1__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_51)
+                                       4.15e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_51_DW01_add_0)
+                                       2.76e-03 5.95e-03 7.16e+05 9.43e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_51_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.21e-02   0.3
+  gen3_1__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_52)
+                                       4.14e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_52_DW01_add_0)
+                                       2.75e-03 5.93e-03 7.16e+05 9.39e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_52_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_1__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_53)
+                                       4.12e-02    0.104 4.82e+06    0.150   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_53_DW01_add_0)
+                                       2.73e-03 5.89e-03 7.16e+05 9.33e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_53_DW02_mult_0)
+                                       1.64e-02 1.30e-02 2.47e+06 3.19e-02   0.3
+  gen3_1__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_54)
+                                       3.78e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_54_DW01_add_0)
+                                       2.48e-03 5.35e-03 7.14e+05 8.55e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_54_DW02_mult_0)
+                                       1.52e-02 1.20e-02 2.45e+06 2.96e-02   0.3
+  gen3_1__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_55)
+                                       4.14e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_55_DW01_add_0)
+                                       2.76e-03 5.95e-03 7.16e+05 9.42e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_55_DW02_mult_0)
+                                       1.65e-02 1.31e-02 2.47e+06 3.20e-02   0.3
+  gen3_0__gen4_7__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_56)
+                                       3.72e-02    0.102 4.79e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_56_DW01_add_0)
+                                       2.48e-03 5.35e-03 7.14e+05 8.54e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_56_DW02_mult_0)
+                                       1.49e-02 1.18e-02 2.45e+06 2.92e-02   0.3
+  gen3_0__gen4_6__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_57)
+                                       3.78e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_57_DW01_add_0)
+                                       2.50e-03 5.38e-03 7.14e+05 8.59e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_57_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.94e-02   0.3
+  gen3_0__gen4_5__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_58)
+                                       3.77e-02    0.102 4.79e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_58_DW01_add_0)
+                                       2.48e-03 5.34e-03 7.14e+05 8.53e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_58_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.94e-02   0.3
+  gen3_0__gen4_4__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_59)
+                                       3.79e-02    0.102 4.79e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_59_DW01_add_0)
+                                       2.49e-03 5.38e-03 7.14e+05 8.59e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_59_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.95e-02   0.3
+  gen3_0__gen4_3__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_60)
+                                       3.78e-02    0.102 4.80e+06    0.145   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_60_DW01_add_0)
+                                       2.49e-03 5.37e-03 7.14e+05 8.58e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_60_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.94e-02   0.3
+  gen3_0__gen4_2__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_61)
+                                       3.76e-02    0.102 4.80e+06    0.144   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_61_DW01_add_0)
+                                       2.45e-03 5.29e-03 7.14e+05 8.46e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_61_DW02_mult_0)
+                                       1.51e-02 1.19e-02 2.45e+06 2.94e-02   0.3
+  gen3_0__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_62)
+                                       4.16e-02    0.105 4.82e+06    0.151   1.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_62_DW01_add_0)
+                                       2.77e-03 5.98e-03 7.16e+05 9.47e-03   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_62_DW02_mult_0)
+                                       1.67e-02 1.33e-02 2.47e+06 3.25e-02   0.3
+  gen3_0__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63)
+                                       5.71e-02    0.126 5.18e+06    0.188   1.8
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW01_add_0)
+                                       4.16e-03 9.78e-03 7.26e+05 1.47e-02   0.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW02_mult_0)
+                                       2.85e-02 2.50e-02 2.77e+06 5.63e-02   0.5
+  gen2_7__buffer_inst_r (buffern_WORD_SIZE8_LENGTH7_0)
+                                       3.13e-03    0.112 2.38e+06    0.118   1.1
+    gen1_6__buffer (buffer1_WORD_SIZE8_0)
+                                       6.63e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_5__buffer (buffer1_WORD_SIZE8_1)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_4__buffer (buffer1_WORD_SIZE8_2)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_3)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_4)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_5)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_6)
+                                       4.12e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen2_6__buffer_inst_r (buffern_WORD_SIZE8_LENGTH6_0)
+                                       2.73e-03 9.66e-02 2.04e+06    0.101   1.0
+    gen1_5__buffer (buffer1_WORD_SIZE8_7)
+                                       6.66e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_4__buffer (buffer1_WORD_SIZE8_8)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_9)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_10)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_11)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_12)
+                                       4.13e-04 1.69e-02 3.51e+05 1.76e-02   0.2
+  gen2_5__buffer_inst_r (buffern_WORD_SIZE8_LENGTH5_0)
+                                       2.32e-03 8.06e-02 1.71e+06 8.46e-02   0.8
+    gen1_4__buffer (buffer1_WORD_SIZE8_13)
+                                       6.68e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_14)
+                                       4.14e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_15)
+                                       4.14e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_16)
+                                       4.14e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_17)
+                                       4.14e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen2_4__buffer_inst_r (buffern_WORD_SIZE8_LENGTH4_0)
+                                       1.90e-03 6.46e-02 1.37e+06 6.79e-02   0.6
+    gen1_3__buffer (buffer1_WORD_SIZE8_18)
+                                       6.62e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_19)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_20)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_21)
+                                       4.12e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen2_3__buffer_inst_r (buffern_WORD_SIZE8_LENGTH3_0)
+                                       1.49e-03 4.89e-02 1.03e+06 5.14e-02   0.5
+    gen1_2__buffer (buffer1_WORD_SIZE8_22)
+                                       6.66e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_23)
+                                       4.13e-04 1.60e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_24)
+                                       4.13e-04 1.69e-02 3.51e+05 1.76e-02   0.2
+  gen2_2__buffer_inst_r (buffern_WORD_SIZE8_LENGTH2_0)
+                                       1.08e-03 3.29e-02 6.90e+05 3.47e-02   0.3
+    gen1_1__buffer (buffer1_WORD_SIZE8_25)
+                                       6.70e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_26)
+                                       4.15e-04 1.69e-02 3.51e+05 1.76e-02   0.2
+  gen2_1__buffer_inst_r (buffern_WORD_SIZE8_LENGTH1_0)
+                                       6.68e-04 1.70e-02 3.51e+05 1.80e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_27)
+                                       6.68e-04 1.70e-02 3.51e+05 1.80e-02   0.2
+  gen1_7__buffer_inst_c (buffern_WORD_SIZE8_LENGTH7_1)
+                                       3.12e-03    0.112 2.38e+06    0.118   1.1
+    gen1_6__buffer (buffer1_WORD_SIZE8_28)
+                                       6.59e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_5__buffer (buffer1_WORD_SIZE8_29)
+                                       4.10e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_4__buffer (buffer1_WORD_SIZE8_30)
+                                       4.10e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_31)
+                                       4.10e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_32)
+                                       4.10e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_33)
+                                       4.10e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_34)
+                                       4.10e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen1_6__buffer_inst_c (buffern_WORD_SIZE8_LENGTH6_1)
+                                       2.72e-03 9.65e-02 2.05e+06    0.101   1.0
+    gen1_5__buffer (buffer1_WORD_SIZE8_35)
+                                       6.63e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_4__buffer (buffer1_WORD_SIZE8_36)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_37)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_38)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_39)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_40)
+                                       4.12e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen1_5__buffer_inst_c (buffern_WORD_SIZE8_LENGTH5_1)
+                                       2.31e-03 8.06e-02 1.71e+06 8.46e-02   0.8
+    gen1_4__buffer (buffer1_WORD_SIZE8_41)
+                                       6.63e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_3__buffer (buffer1_WORD_SIZE8_42)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_43)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_44)
+                                       4.12e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_45)
+                                       4.12e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen1_4__buffer_inst_c (buffern_WORD_SIZE8_LENGTH4_1)
+                                       1.91e-03 6.46e-02 1.37e+06 6.79e-02   0.6
+    gen1_3__buffer (buffer1_WORD_SIZE8_46)
+                                       6.67e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_2__buffer (buffer1_WORD_SIZE8_47)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_48)
+                                       4.13e-04 1.59e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_49)
+                                       4.13e-04 1.68e-02 3.51e+05 1.76e-02   0.2
+  gen1_3__buffer_inst_c (buffern_WORD_SIZE8_LENGTH3_1)
+                                       1.49e-03 4.89e-02 1.03e+06 5.14e-02   0.5
+    gen1_2__buffer (buffer1_WORD_SIZE8_50)
+                                       6.67e-04 1.60e-02 3.39e+05 1.70e-02   0.2
+    gen1_1__buffer (buffer1_WORD_SIZE8_51)
+                                       4.13e-04 1.60e-02 3.39e+05 1.67e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_52)
+                                       4.13e-04 1.69e-02 3.51e+05 1.76e-02   0.2
+  gen1_2__buffer_inst_c (buffern_WORD_SIZE8_LENGTH2_1)
+                                       1.08e-03 3.29e-02 6.90e+05 3.47e-02   0.3
+    gen1_1__buffer (buffer1_WORD_SIZE8_53)
+                                       6.68e-04 1.60e-02 3.39e+05 1.71e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_54)
+                                       4.13e-04 1.69e-02 3.51e+05 1.77e-02   0.2
+  gen1_1__buffer_inst_c (buffern_WORD_SIZE8_LENGTH1_1)
+                                       6.73e-04 1.70e-02 3.51e+05 1.80e-02   0.2
+    gen1_0__buffer (buffer1_WORD_SIZE8_55)
+                                       6.73e-04 1.70e-02 3.51e+05 1.80e-02   0.2
+1

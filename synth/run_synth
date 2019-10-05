@@ -1,0 +1,36 @@
+set top_level = "systolic_array"
+
+if (-e ./synth_out) then 
+    rm -rf synth_out_old
+    mv ./synth_out synth_out_old
+endif
+source /tools/synopsys/synthesis/j201409/cshrc.syn
+set cur_dir = `pwd`
+echo $cur_dir
+
+make dc | tee run.log
+
+if (-e ./synth_out) then
+    mv ./synth_out synth_out_old
+else
+    mkdir ./synth_out
+    mkdir ./synth_out/logs/
+    mkdir ./synth_out/svf/
+    mkdir ./synth_out/ddc/
+    mkdir ./synth_out/netlist/
+    mkdir ./synth_out/constr/
+    mkdir ./synth_out/intermediate_files
+endif
+
+mv *.log ./synth_out/logs/
+mv *.svf ./synth_out/svf/
+mv *.ddc ./synth_out/ddc/
+mv *.v   ./synth_out/netlist/
+mv *.sdc ./synth_out/constr/
+mv *.mr  ./synth_out/intermediate_files/
+mv *.pvl  ./synth_out/intermediate_files/
+mv *.syn  ./synth_out/intermediate_files/
+mv rpt/  ./synth_out/
+
+echo "Done!"
+

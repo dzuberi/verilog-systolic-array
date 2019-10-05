@@ -1,0 +1,19 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03; Runtime version I-2014.03;  Feb 24 01:54 2019
+VCD+ Writer I-2014.03 Copyright (c) 1991-2014 by Synopsys Inc.
+00a22d 00bbd6 00e95f 00add5 00750d 00b8b7 00b5fc 00df22 
+00b26b 00bc17 0103a8 00ebab 00b4d7 00a2ab 00deb8 00ec7f 
+00b045 00c6cb 00c477 00c1f7 0087e7 00a235 00aea5 00c309 
+00be5b 008bfd 0094d7 00f2ea 00d5a1 005509 00c67f 00a09a 
+0095ec 0092ea 00e1a7 00cfb6 00a734 00685a 0082da 008a31 
+00b1f9 00ae59 00be24 00b9d3 0094f1 009247 00aa33 00ac4c 
+00b65e 00aab2 00db02 00b95c 00950b 00926e 00bcd7 00e128 
+0071b6 00605d 004781 007c56 005dc5 004a9d 00633b 005f3f 
+Cycles: 000017
+$finish called from file "/nethome/dzuberi3/lab3-files/testbenches/systolic_array_tb.v", line 147.
+$finish at simulation time                 2550
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 255000 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.0Mb
+Sun Feb 24 01:54:24 2019

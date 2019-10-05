@@ -1,0 +1,5 @@
+/nethome/dzuberi3/lab3-files/src/mac_unit.v
+/nethome/dzuberi3/lab3-files/src/systolic_array.v
+/nethome/dzuberi3/lab3-files/src/buffer1.v
+/nethome/dzuberi3/lab3-files/src/buffern.v
+/nethome/dzuberi3/lab3-files/testbenches/systolic_array_tb.v

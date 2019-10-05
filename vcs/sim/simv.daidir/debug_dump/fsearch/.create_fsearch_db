@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/tools/synopsys/vcs/i201403/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/tools/synopsys/vcs/i201403/linux/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/tools/synopsys/vcs/i201403/linux/lib:/tools/synopsys/vcs/i201403/linux/lib/pylib27
+export LD_LIBRARY_PATH
+/tools/synopsys/vcs/i201403/linux/bin/vcsfind_create_index.exe  -z  simv.daidir/debug_dump/fsearch/idents_dFtAVg.xml.gz  -o simv.daidir/debug_dump/fsearch/fsearch.db_tmp
+\mv simv.daidir/debug_dump/fsearch/fsearch.db_tmp simv.daidir/debug_dump/fsearch/fsearch.db

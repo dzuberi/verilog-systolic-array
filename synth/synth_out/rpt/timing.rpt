@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : systolic_array
+Version: J-2014.09
+Date   : Sun Feb 24 01:57:17 2019
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: left_inputs[63]
+              (input port clocked by clk_input)
+  Endpoint: gen3_0__gen4_0__mac_inst/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   50.00      50.00 r
+  left_inputs[63] (in)                                    0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/a[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63)
+                                                          0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/mult_23/A[0] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW02_mult_0)
+                                                          0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/mult_23/U33/ZN (INV_X1)        5.50      55.50 f
+  gen3_0__gen4_0__mac_inst/mult_23/U120/ZN (NOR2_X1)      6.54      62.04 r
+  gen3_0__gen4_0__mac_inst/mult_23/U2/ZN (INV_X1)         2.56      64.60 f
+  gen3_0__gen4_0__mac_inst/mult_23/U24/ZN (NOR2_X1)       3.97      68.57 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_2_5/S (FA_X1)      14.52      83.09 f
+  gen3_0__gen4_0__mac_inst/mult_23/S2_3_4/S (FA_X1)      14.25      97.34 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_4_3/S (FA_X1)      13.95     111.29 f
+  gen3_0__gen4_0__mac_inst/mult_23/S2_5_2/S (FA_X1)      14.25     125.53 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_6_1/S (FA_X1)      13.95     139.49 f
+  gen3_0__gen4_0__mac_inst/mult_23/S4_0/S (FA_X1)        14.62     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/FS_1/A[5] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW01_add_1)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/FS_1/SUM[5] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW01_add_1)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/PRODUCT[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW02_mult_0)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/add_24/A[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW01_add_0)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_7/CO (FA_X1)         9.22     163.33 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_8/CO (FA_X1)         8.98     172.30 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_9/CO (FA_X1)         8.98     181.28 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_10/CO (FA_X1)        8.98     190.26 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_11/CO (FA_X1)        8.98     199.24 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_12/CO (FA_X1)        8.98     208.22 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_13/CO (FA_X1)        8.98     217.19 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_14/CO (FA_X1)        8.98     226.17 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_15/CO (FA_X1)       10.51     236.68 r
+  gen3_0__gen4_0__mac_inst/add_24/U2/Z (AND2_X1)          6.61     243.29 r
+  gen3_0__gen4_0__mac_inst/add_24/U3/Z (AND2_X1)          6.34     249.63 r
+  gen3_0__gen4_0__mac_inst/add_24/U4/Z (AND2_X1)          6.34     255.96 r
+  gen3_0__gen4_0__mac_inst/add_24/U5/Z (AND2_X1)          6.34     262.30 r
+  gen3_0__gen4_0__mac_inst/add_24/U6/Z (AND2_X1)          6.34     268.64 r
+  gen3_0__gen4_0__mac_inst/add_24/U7/Z (AND2_X1)          6.48     275.12 r
+  gen3_0__gen4_0__mac_inst/add_24/U10/ZN (INV_X1)         2.06     277.18 f
+  gen3_0__gen4_0__mac_inst/add_24/U8/ZN (NOR2_X1)         3.88     281.05 r
+  gen3_0__gen4_0__mac_inst/add_24/U13/Z (XOR2_X1)         5.22     286.27 r
+  gen3_0__gen4_0__mac_inst/add_24/SUM[23] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE24_63_DW01_add_0)
+                                                          0.00     286.27 r
+  gen3_0__gen4_0__mac_inst/out_reg_0_/D (DFFRNQ_X1)       0.00     286.27 r
+  data arrival time                                                286.27
+
+  clock clk_input (rise edge)                          1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  clock uncertainty                                      -0.20     999.80
+  gen3_0__gen4_0__mac_inst/out_reg_0_/CLK (DFFRNQ_X1)     0.00     999.80 r
+  library setup time                                     -8.28     991.52
+  data required time                                               991.52
+  --------------------------------------------------------------------------
+  data required time                                               991.52
+  data arrival time                                               -286.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                      705.25
+
+
+1

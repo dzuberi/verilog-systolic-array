@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : area
+Design : systolic_array
+Version: J-2014.09
+Date   : Thu Feb 21 21:49:33 2019
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db)
+
+Number of ports:                          115
+Number of nets:                           221
+Number of cells:                           49
+Number of combinational cells:             25
+Number of sequential cells:                17
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                      16
+
+Combinational area:                432.242701
+Buf/Inv area:                       24.182785
+Noncombinational area:             205.750265
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   637.992966
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------------
+systolic_array                     637.9930    100.0    7.1762    21.7252  0.0000  systolic_array
+add_108                              9.5355      1.5    9.5355     0.0000  0.0000  systolic_array_DW01_inc_0
+gen1_1__buffer_inst_c               10.3711      1.6    0.0000     0.0000  0.0000  buffern_WORD_SIZE8_LENGTH1_1
+gen1_1__buffer_inst_c/gen1_0__buffer
+                                    10.3711      1.6    0.1475    10.2236  0.0000  buffer1_WORD_SIZE8_1
+gen2_1__buffer_inst_r               10.3711      1.6    0.0000     0.0000  0.0000  buffern_WORD_SIZE8_LENGTH1_0
+gen2_1__buffer_inst_r/gen1_0__buffer
+                                    10.3711      1.6    0.1475    10.2236  0.0000  buffer1_WORD_SIZE8_0
+gen3_0__gen4_0__mac_inst           144.7035     22.7    0.1475    40.8945  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3
+gen3_0__gen4_0__mac_inst/add_24     18.6286      2.9   18.6286     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_0
+gen3_0__gen4_0__mac_inst/mult_23    85.0330     13.3   76.3822     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW02_mult_0
+gen3_0__gen4_0__mac_inst/mult_23/FS_1
+                                     8.6508      1.4    8.6508     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_1
+gen3_0__gen4_1__mac_inst           144.7035     22.7    0.1475    40.8945  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2
+gen3_0__gen4_1__mac_inst/add_24     18.6286      2.9   18.6286     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2_DW01_add_0
+gen3_0__gen4_1__mac_inst/mult_23    85.0330     13.3   76.3822     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2_DW02_mult_0
+gen3_0__gen4_1__mac_inst/mult_23/FS_1
+                                     8.6508      1.4    8.6508     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2_DW01_add_1
+gen3_1__gen4_0__mac_inst           144.7035     22.7    0.1475    40.8945  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1
+gen3_1__gen4_0__mac_inst/add_24     18.6286      2.9   18.6286     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1_DW01_add_0
+gen3_1__gen4_0__mac_inst/mult_23    85.0330     13.3   76.3822     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1_DW02_mult_0
+gen3_1__gen4_0__mac_inst/mult_23/FS_1
+                                     8.6508      1.4    8.6508     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1_DW01_add_1
+gen3_1__gen4_1__mac_inst           144.7035     22.7    0.1475    40.8945  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0
+gen3_1__gen4_1__mac_inst/add_24     18.6286      2.9   18.6286     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0_DW01_add_0
+gen3_1__gen4_1__mac_inst/mult_23    85.0330     13.3   76.3822     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0_DW02_mult_0
+gen3_1__gen4_1__mac_inst/mult_23/FS_1
+                                     8.6508      1.4    8.6508     0.0000  0.0000  MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0_DW01_add_1
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------------
+Total                                                 432.2427   205.7503  0.0000
+
+1

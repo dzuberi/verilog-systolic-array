@@ -1,0 +1,10 @@
+How to run the syntehsis
+
+1. Add your files to /src
+2. Update the file_list.tcl to indicate your files
+3. Run Makefile
+
+How to change standard cell library
+-> Edit variables.tcl
+
+

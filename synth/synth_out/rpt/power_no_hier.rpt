@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : systolic_array
+Version: J-2014.09
+Date   : Sun Feb 24 01:57:20 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db)
+
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   7.6172 mW   (74%)
+  Net Switching Power  =   2.6266 mW   (26%)
+                         ---------
+Total Dynamic Power    =  10.2438 mW  (100%)
+
+Cell Leakage Power     = 329.4963 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           6.4068            1.3083        1.2329e+08            7.8384  (  74.13%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      1.2105            1.3182        2.0620e+08            2.7349  (  25.87%)
+--------------------------------------------------------------------------------------------------
+Total              7.6172 mW         2.6266 mW     3.2950e+08 pW        10.5733 mW
+1

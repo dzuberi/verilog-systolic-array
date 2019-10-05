@@ -1,0 +1,72 @@
+Loading db file '/nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : systolic_array
+Version: J-2014.09
+Date   : Thu Feb 21 21:49:33 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /nethome/dzuberi3/lab3-files/synth/lib/NanGate_15nm_OCL.db)
+
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+systolic_array                            0.179    0.443 1.96e+07    0.642 100.0
+  add_108 (systolic_array_DW01_inc_0)  4.64e-04 8.78e-04 3.82e+05 1.72e-03   0.3
+  gen3_1__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0)
+                                       3.60e-02 8.62e-02 4.23e+06    0.126  19.7
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0_DW01_add_0)
+                                       2.23e-03 5.13e-03 4.55e+05 7.81e-03   1.2
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_0_DW02_mult_0)
+                                       1.53e-02 1.21e-02 2.46e+06 2.99e-02   4.7
+  gen3_1__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1)
+                                       3.99e-02 8.88e-02 4.26e+06    0.133  20.7
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1_DW01_add_0)
+                                       2.47e-03 5.70e-03 4.57e+05 8.63e-03   1.3
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_1_DW02_mult_0)
+                                       1.66e-02 1.33e-02 2.47e+06 3.24e-02   5.0
+  gen3_0__gen4_1__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2)
+                                       3.99e-02 8.90e-02 4.25e+06    0.133  20.7
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2_DW01_add_0)
+                                       2.47e-03 5.70e-03 4.57e+05 8.63e-03   1.3
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_2_DW02_mult_0)
+                                       1.67e-02 1.33e-02 2.47e+06 3.24e-02   5.1
+  gen3_0__gen4_0__mac_inst (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3)
+                                       5.54e-02    0.110 4.61e+06    0.170  26.4
+    add_24 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_0)
+                                       3.77e-03 9.38e-03 4.66e+05 1.36e-02   2.1
+    mult_23 (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW02_mult_0)
+                                       2.84e-02 2.49e-02 2.77e+06 5.61e-02   8.7
+  gen2_1__buffer_inst_r (buffern_WORD_SIZE8_LENGTH1_0)
+                                       6.70e-04 1.68e-02 3.52e+05 1.78e-02   2.8
+    gen1_0__buffer (buffer1_WORD_SIZE8_0)
+                                       6.70e-04 1.68e-02 3.52e+05 1.78e-02   2.8
+  gen1_1__buffer_inst_c (buffern_WORD_SIZE8_LENGTH1_1)
+                                       6.69e-04 1.68e-02 3.52e+05 1.79e-02   2.8
+    gen1_0__buffer (buffer1_WORD_SIZE8_1)
+                                       6.69e-04 1.68e-02 3.52e+05 1.79e-02   2.8
+1

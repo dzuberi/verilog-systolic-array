@@ -1,0 +1,158 @@
+#@ # 
+#@ # Running dc_shell Version J-2014.09 for amd64 -- Aug 25, 2014
+#@ # Date:   Thu Feb 21 21:49:26 2019
+#@ # Run by: dzuberi3@ecelinsrvy.ece.gatech.edu
+#@ 
+
+source /tools/synopsys/synthesis/j201409/admin/setup/.synopsys_dc.setup
+source -echo -verbose /nethome/dzuberi3/lab3-files/synth/./scripts/dc/dc_script.tcl
+#@ # -- Starting source /nethome/dzuberi3/lab3-files/synth/./scripts/dc/dc_script.tcl
+
+#@ #START
+#@ source variables.tcl
+#@ # -- Starting source variables.tcl
+
+#@ set current_library "NanGate" 
+#@ 
+#@ #For NanGate library, the unit of clock period is ps.
+#@ # Therefore, 1000 ps = 1ns => 1GHz clock
+#@ set Clock_Period 1000
+#@ # If you are using a different clock name, change the following variable
+#@ set Clock_Name "clk"
+#@ 
+#@ 
+#@ # -- End source variables.tcl
+
+#@ 
+#@ set rpt_path "./rpt"
+#@ #set search_path "./lib"
+#@ set search_path "./lib /tools/synopsys/synthesis/j201409/libraries/syn/ ./src ./"
+#@ 
+#@ set hdlin_preserve_sequential true
+#@ 
+#@ switch $current_library {
+#@   ARM_180nm_rvt {
+#@     set synthetic_library "sc7_ch018ic_base_rvt_tt_typ_max_1p80v_25c.db"
+#@     set link_library "sc7_ch018ic_base_rvt_tt_typ_max_1p80v_25c.db"
+#@     set target_library "sc7_ch018ic_base_rvt_tt_typ_max_1p80v_25c.db"
+#@     report_lib "sc7_ch018ic_base_rvt_tt_typ_max_1p80v_25c.db"
+#@   }
+#@ 
+#@   ARM_180nm_sc7 {
+#@     set synthetic_library "scx_csm_18ic_tt_1p8v_25c.db"
+#@     set link_library "scx_csm_18ic_tt_1p8v_25c.db"
+#@     set target_library "scx_csm_18ic_tt_1p8v_25c.db"
+#@     report_lib "scx_csm_18ic_tt_1p8v_25c.db"
+#@   }
+#@ 
+#@   Synopsys_Educational {
+#@     set synthetic_library "saed32hvt_tt0p85v25c.db"
+#@     set link_library "saed32hvt_tt0p85v25c.db"
+#@     set target_library "saed32hvt_tt0p85v25c.db"
+#@     report_lib "saed32hvt_tt0p85v25c.db"
+#@   }
+#@ 
+#@   default {
+#@     set synthetic_library "NanGate_15nm_OCL.db"
+#@     set link_library "NanGate_15nm_OCL.db"
+#@     set target_library "NanGate_15nm_OCL.db"
+#@     report_lib "NanGate_15nm_OCL.db"
+#@   }
+#@ }
+#@ 
+#@ # Multicore setting
+#@ #set multi_core_enable_analysis
+#@ # 15 is the maximum availalbe number of cores in DC
+#@ set_host_options -max_cores 15
+#@ 
+#@ #Read Files
+#@ source ./file_list.tcl
+#@ # -- Starting source ./file_list.tcl
+
+#@ # Change the file list for your design
+#@ # Top module must be at the first of the list
+#@ 
+#@ set top_level systolic_array
+#@ set verilog_files [list                     /nethome/dzuberi3/lab3-files/src/systolic_array.v 		    /nethome/dzuberi3/lab3-files/src/mac_unit.v 		    /nethome/dzuberi3/lab3-files/src/buffer1.v 		    /nethome/dzuberi3/lab3-files/src/buffern.v                     ]
+#@ # -- End source ./file_list.tcl
+
+#@ analyze -format verilog $verilog_files
+#@ elaborate $top_level
+#@ 
+#@ link
+#@ uniquify
+#@ 
+#@ source ./scripts/dc/dc_timing.sdc
+#@ # -- Starting source ./scripts/dc/dc_timing.sdc
+
+#@ #-------------------------------------------------------------------------
+#@ #constraints file
+#@ #-------------------------------------------------------------------------
+#@ #
+#@ # This file contains various constraints for your chip including the
+#@ # target clock period, fanout, transition time and any
+#@ # input/output delay constraints.
+#@ #
+#@ 
+#@ # set clock period [ns]
+#@ 
+#@ #source variables.tcl
+#@ 
+#@ #For NanGate15nm Library
+#@ set_units -capacitance ff
+#@ set_units -time ps
+#@ 
+#@ create_clock -period $Clock_Period -name clk_input $Clock_Name
+#@ 
+#@ # set clock jitter [%]
+#@ set_clock_uncertainty -setup 0.2 clk_input
+#@ set_clock_uncertainty -hold  0.2 clk_input
+#@ 
+#@ # set input and output delay [ns]
+#@ #set_input_delay  0.05 -clock clk_input [remove_from_collection [all_inputs] CLK]
+#@ #set_output_delay 0.05 -clock clk_input [all_outputs]
+#@ 
+#@ # set input and output delay [ps]
+#@ set_input_delay  50 -clock clk_input [remove_from_collection [all_inputs] clk]
+#@ set_output_delay 50 -clock clk_input [all_outputs]
+#@ 
+#@ # set wire load model
+#@ #set_wire_load_model -name "SMALL" 
+#@ 
+#@ # set output capacitive load [pF]
+#@ #set_load 0.015 [all_outputs]
+#@ 
+#@ # set output capacitive load [fF]
+#@ set_load 15 [all_outputs]
+#@ # -- End source ./scripts/dc/dc_timing.sdc
+
+#@ check_design
+#@ 
+#@ # Load in the timing constraint file
+#@ update_timing
+#@ 
+#@ compile -map_effort medium 
+#@ #compile_ultra -timing_high_effort_script -no_autoungroup
+#@ 
+#@ change_names -rules verilog -hierarchy -verbose
+#@ 
+#@ write -format verilog -hierarchy -output results_synthesized.v
+#@ write_sdc results_synthesized.sdc
+#@ 
+#@ 
+#@ # timing, area, power reports
+#@ report_timing   -nworst 50                 -max_paths 50                 -path full                 -delay max                 -significant_digits 3                 -sort_by slack      > $rpt_path/timing_max.rpt
+#@ report_timing   -nworst 50                 -max_paths 50                 -path full                 -delay min                 -significant_digits 3                 -sort_by slack      > $rpt_path/timing_min.rpt
+#@ 
+#@ report_timing                       > $rpt_path/timing.rpt
+#@ report_timing_derate                > $rpt_path/timing_derate.rpt
+#@ report_area     -hierarchy          > $rpt_path/area.rpt
+#@ report_power    -hier               > $rpt_path/power.rpt
+#@ report_power                        > $rpt_path/power_no_hier.rpt
+#@ report_net      -cell_degradation   > $rpt_path/net.rpt
+#@ report_clock_gating                 > $rpt_path/clock_gating.rpt
+#@ 
+#@ # Save the synthesis state
+#@ write -hierarchy -format ddc -output synthesis.ddc
+#@ 
+#@ quit

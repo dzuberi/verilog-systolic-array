@@ -1,0 +1,698 @@
+ 
+****************************************
+Report : net
+        -cell_degradation
+Design : systolic_array
+Version: J-2014.09
+Date   : Thu Feb 21 21:49:33 2019
+****************************************
+
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+
+Net
+ Fanout    Fanin     Load      LoadUR    LoadUF    LoadLR    LoadLF    Resist    Pins      Attr
+-----------------------------------------------------------------------------------------------
+N4
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N5
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N6
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N7
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N8
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N9
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N10
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N11
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N12
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N13
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N14
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N15
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N16
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N17
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N18
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N19
+      1         1        0.70      0.90      1.03      0.55      0.37      0.00       2    
+N20
+      1         1        0.82      1.04      0.94      0.58      0.60      0.00       2    
+N22
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N23
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N24
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N25
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N26
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N27
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N28
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N29
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N30
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N31
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N32
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N33
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N34
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N35
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N36
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+N37
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+clk
+    161         1      105.81    122.81    117.28     81.12     78.50      0.00     162    dr
+compute_done
+      2         1       15.69     16.22     15.83     15.35     15.53      0.00       3    
+cycles_count[0]
+      3         1       16.64     17.04     16.77     16.23     16.11      0.00       4    
+cycles_count[1]
+      3         1       16.45     17.07     16.87     15.86     15.85      0.00       4    
+cycles_count[2]
+      3         1       16.52     16.93     16.98     16.08     15.91      0.00       4    
+cycles_count[3]
+      3         1       16.66     17.06     16.87     16.16     16.16      0.00       4    
+cycles_count[4]
+      3         1       16.62     17.03     16.92     16.14     16.16      0.00       4    
+cycles_count[5]
+      3         1       16.51     17.15     16.88     15.90     16.08      0.00       4    
+cycles_count[6]
+      3         1       16.46     17.22     16.84     15.91     16.09      0.00       4    
+cycles_count[7]
+      3         1       16.45     17.36     16.75     15.94     16.12      0.00       4    
+cycles_count[8]
+      3         1       16.62     17.02     16.92     16.15     16.16      0.00       4    
+cycles_count[9]
+      3         1       16.52     17.13     16.88     15.91     16.09      0.00       4    
+cycles_count[10]
+      3         1       16.65     17.07     16.91     16.14     16.15      0.00       4    
+cycles_count[11]
+      3         1       16.52     17.25     16.79     15.90     16.08      0.00       4    
+cycles_count[12]
+      3         1       16.47     17.34     16.76     15.91     16.09      0.00       4    
+cycles_count[13]
+      3         1       16.63     17.05     16.92     16.14     16.15      0.00       4    
+cycles_count[14]
+      3         1       16.51     17.18     16.87     15.90     16.08      0.00       4    
+cycles_count[15]
+      3         1       17.18     18.18     17.63     16.32     16.69      0.00       4    
+left_fwd[8]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[9]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[10]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[11]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[12]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[13]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[14]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[15]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[16]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[17]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[18]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[19]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[20]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[21]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[22]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[23]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[24]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[25]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[26]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[27]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[28]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[29]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[30]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_fwd[31]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[0]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[1]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[2]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[3]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[4]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[5]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[6]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[7]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+left_inputs[8]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[9]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[10]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[11]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[12]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[13]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[14]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+left_inputs[15]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+n3
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n4
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n5
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n6
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n7
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n8
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n9
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n10
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n11
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n12
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n13
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n14
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n15
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n16
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n17
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n18
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n19
+      1         1        0.92      1.05      1.05      0.68      0.68      0.00       2    dr
+n21
+      1         1        0.82      1.04      0.94      0.58      0.60      0.00       2    
+n22
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+n23
+      1         1        0.61      1.33      0.78      0.37      0.54      0.00       2    
+n24
+      1         1        0.81      1.02      0.91      0.60      0.60      0.00       2    
+n25
+      1         1        0.66      0.94      0.99      0.52      0.35      0.00       2    
+n26
+      1         1        0.60      0.89      1.09      0.52      0.35      0.00       2    
+n27
+      1         1        0.61      0.80      1.21      0.53      0.36      0.00       2    
+n28
+     16         1       13.17     16.22     14.49      9.57      9.63      0.00      17    
+pe_register_vals[0]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[1]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[2]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[3]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[4]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[5]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[6]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[7]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[8]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[9]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[10]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[11]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[12]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[13]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[14]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[15]
+      3         1       17.14     17.62     17.51     16.35     16.46      0.00       4    
+pe_register_vals[16]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[17]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[18]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[19]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[20]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[21]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[22]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[23]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[24]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[25]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[26]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[27]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[28]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[29]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[30]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[31]
+      3         1       17.14     17.62     17.51     16.35     16.46      0.00       4    
+pe_register_vals[32]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[33]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[34]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[35]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[36]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[37]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[38]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[39]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[40]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[41]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[42]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[43]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[44]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[45]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[46]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[47]
+      3         1       17.14     17.62     17.51     16.35     16.46      0.00       4    
+pe_register_vals[48]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[49]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[50]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[51]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[52]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[53]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[54]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[55]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[56]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[57]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[58]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[59]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[60]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[61]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[62]
+      2         1       16.42     16.74     16.63     15.97     15.94      0.00       3    
+pe_register_vals[63]
+      3         1       17.14     17.62     17.51     16.35     16.46      0.00       4    
+rst
+      8         1        6.46      8.78      7.35      4.36      4.59      0.00       9    
+top_fwd[8]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[9]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[10]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[11]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[12]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[13]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[14]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[15]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[16]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[17]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[18]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[19]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[20]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[21]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[22]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[23]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[24]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[25]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[26]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[27]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[28]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[29]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[30]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_fwd[31]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[0]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[1]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[2]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[3]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[4]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[5]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[6]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[7]
+      1         1        0.49      0.62      0.53      0.31      0.32      0.00       2    
+top_inputs[8]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[9]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[10]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[11]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[12]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[13]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[14]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+top_inputs[15]
+      2         1        1.31      1.70      1.47      0.88      0.90      0.00       3    
+-----------------------------------------------------------------------------------------------
+Total 221 nets
+    568       221     1592.15   1682.53   1645.99   1481.17   1477.05      0.00     789
+Maximum
+    161         1      105.81    122.81    117.28     81.12     78.50      0.00     162
+Average
+   2.57      1.00        7.20      7.61      7.45      6.70      6.68      0.00    3.57
+
+   cell_degradation
+
+                          Required            Actual
+Net:                    Capacitance         Capacitance    Slack
+--------------------------------------------------------------------------------
+N4                      infinity             0.70          infinity  (MET)
+N5                      infinity             0.70          infinity  (MET)
+N6                      infinity             0.70          infinity  (MET)
+N7                      infinity             0.70          infinity  (MET)
+N8                      infinity             0.70          infinity  (MET)
+N9                      infinity             0.70          infinity  (MET)
+N10                     infinity             0.70          infinity  (MET)
+N11                     infinity             0.70          infinity  (MET)
+N12                     infinity             0.70          infinity  (MET)
+N13                     infinity             0.70          infinity  (MET)
+N14                     infinity             0.70          infinity  (MET)
+N15                     infinity             0.70          infinity  (MET)
+N16                     infinity             0.70          infinity  (MET)
+N17                     infinity             0.70          infinity  (MET)
+N18                     infinity             0.70          infinity  (MET)
+N19                     infinity             0.70          infinity  (MET)
+N20                     infinity             0.82          infinity  (MET)
+N22                     infinity             0.49          infinity  (MET)
+N23                     infinity             0.49          infinity  (MET)
+N24                     infinity             0.49          infinity  (MET)
+N25                     infinity             0.49          infinity  (MET)
+N26                     infinity             0.49          infinity  (MET)
+N27                     infinity             0.49          infinity  (MET)
+N28                     infinity             0.49          infinity  (MET)
+N29                     infinity             0.49          infinity  (MET)
+N30                     infinity             0.49          infinity  (MET)
+N31                     infinity             0.49          infinity  (MET)
+N32                     infinity             0.49          infinity  (MET)
+N33                     infinity             0.49          infinity  (MET)
+N34                     infinity             0.49          infinity  (MET)
+N35                     infinity             0.49          infinity  (MET)
+N36                     infinity             0.49          infinity  (MET)
+N37                     infinity             0.49          infinity  (MET)
+clk                     infinity           105.81          infinity  (MET)
+compute_done            infinity            15.69          infinity  (MET)
+cycles_count[0]         infinity            16.64          infinity  (MET)
+cycles_count[1]         infinity            16.45          infinity  (MET)
+cycles_count[2]         infinity            16.52          infinity  (MET)
+cycles_count[3]         infinity            16.66          infinity  (MET)
+cycles_count[4]         infinity            16.62          infinity  (MET)
+cycles_count[5]         infinity            16.51          infinity  (MET)
+cycles_count[6]         infinity            16.46          infinity  (MET)
+cycles_count[7]         infinity            16.45          infinity  (MET)
+cycles_count[8]         infinity            16.62          infinity  (MET)
+cycles_count[9]         infinity            16.52          infinity  (MET)
+cycles_count[10]        infinity            16.65          infinity  (MET)
+cycles_count[11]        infinity            16.52          infinity  (MET)
+cycles_count[12]        infinity            16.47          infinity  (MET)
+cycles_count[13]        infinity            16.63          infinity  (MET)
+cycles_count[14]        infinity            16.51          infinity  (MET)
+cycles_count[15]        infinity            17.18          infinity  (MET)
+left_fwd[8]             infinity             1.31          infinity  (MET)
+left_fwd[9]             infinity             1.31          infinity  (MET)
+left_fwd[10]            infinity             1.31          infinity  (MET)
+left_fwd[11]            infinity             1.31          infinity  (MET)
+left_fwd[12]            infinity             1.31          infinity  (MET)
+left_fwd[13]            infinity             1.31          infinity  (MET)
+left_fwd[14]            infinity             1.31          infinity  (MET)
+left_fwd[15]            infinity             1.31          infinity  (MET)
+left_fwd[16]            infinity             1.31          infinity  (MET)
+left_fwd[17]            infinity             1.31          infinity  (MET)
+left_fwd[18]            infinity             1.31          infinity  (MET)
+left_fwd[19]            infinity             1.31          infinity  (MET)
+left_fwd[20]            infinity             1.31          infinity  (MET)
+left_fwd[21]            infinity             1.31          infinity  (MET)
+left_fwd[22]            infinity             1.31          infinity  (MET)
+left_fwd[23]            infinity             1.31          infinity  (MET)
+left_fwd[24]            infinity             1.31          infinity  (MET)
+left_fwd[25]            infinity             1.31          infinity  (MET)
+left_fwd[26]            infinity             1.31          infinity  (MET)
+left_fwd[27]            infinity             1.31          infinity  (MET)
+left_fwd[28]            infinity             1.31          infinity  (MET)
+left_fwd[29]            infinity             1.31          infinity  (MET)
+left_fwd[30]            infinity             1.31          infinity  (MET)
+left_fwd[31]            infinity             1.31          infinity  (MET)
+left_inputs[0]          infinity             0.49          infinity  (MET)
+left_inputs[1]          infinity             0.49          infinity  (MET)
+left_inputs[2]          infinity             0.49          infinity  (MET)
+left_inputs[3]          infinity             0.49          infinity  (MET)
+left_inputs[4]          infinity             0.49          infinity  (MET)
+left_inputs[5]          infinity             0.49          infinity  (MET)
+left_inputs[6]          infinity             0.49          infinity  (MET)
+left_inputs[7]          infinity             0.49          infinity  (MET)
+left_inputs[8]          infinity             1.31          infinity  (MET)
+left_inputs[9]          infinity             1.31          infinity  (MET)
+left_inputs[10]         infinity             1.31          infinity  (MET)
+left_inputs[11]         infinity             1.31          infinity  (MET)
+left_inputs[12]         infinity             1.31          infinity  (MET)
+left_inputs[13]         infinity             1.31          infinity  (MET)
+left_inputs[14]         infinity             1.31          infinity  (MET)
+left_inputs[15]         infinity             1.31          infinity  (MET)
+n3                      infinity             0.92          infinity  (MET)
+n4                      infinity             0.92          infinity  (MET)
+n5                      infinity             0.92          infinity  (MET)
+n6                      infinity             0.92          infinity  (MET)
+n7                      infinity             0.92          infinity  (MET)
+n8                      infinity             0.92          infinity  (MET)
+n9                      infinity             0.92          infinity  (MET)
+n10                     infinity             0.92          infinity  (MET)
+n11                     infinity             0.92          infinity  (MET)
+n12                     infinity             0.92          infinity  (MET)
+n13                     infinity             0.92          infinity  (MET)
+n14                     infinity             0.92          infinity  (MET)
+n15                     infinity             0.92          infinity  (MET)
+n16                     infinity             0.92          infinity  (MET)
+n17                     infinity             0.92          infinity  (MET)
+n18                     infinity             0.92          infinity  (MET)
+n19                     infinity             0.92          infinity  (MET)
+n21                     infinity             0.82          infinity  (MET)
+n22                     infinity             0.49          infinity  (MET)
+n23                     infinity             0.61          infinity  (MET)
+n24                     infinity             0.81          infinity  (MET)
+n25                     infinity             0.66          infinity  (MET)
+n26                     infinity             0.60          infinity  (MET)
+n27                     infinity             0.61          infinity  (MET)
+n28                     infinity            13.17          infinity  (MET)
+pe_register_vals[0]     infinity            16.42          infinity  (MET)
+pe_register_vals[1]     infinity            16.42          infinity  (MET)
+pe_register_vals[2]     infinity            16.42          infinity  (MET)
+pe_register_vals[3]     infinity            16.42          infinity  (MET)
+pe_register_vals[4]     infinity            16.42          infinity  (MET)
+pe_register_vals[5]     infinity            16.42          infinity  (MET)
+pe_register_vals[6]     infinity            16.42          infinity  (MET)
+pe_register_vals[7]     infinity            16.42          infinity  (MET)
+pe_register_vals[8]     infinity            16.42          infinity  (MET)
+pe_register_vals[9]     infinity            16.42          infinity  (MET)
+pe_register_vals[10]    infinity            16.42          infinity  (MET)
+pe_register_vals[11]    infinity            16.42          infinity  (MET)
+pe_register_vals[12]    infinity            16.42          infinity  (MET)
+pe_register_vals[13]    infinity            16.42          infinity  (MET)
+pe_register_vals[14]    infinity            16.42          infinity  (MET)
+pe_register_vals[15]    infinity            17.14          infinity  (MET)
+pe_register_vals[16]    infinity            16.42          infinity  (MET)
+pe_register_vals[17]    infinity            16.42          infinity  (MET)
+pe_register_vals[18]    infinity            16.42          infinity  (MET)
+pe_register_vals[19]    infinity            16.42          infinity  (MET)
+pe_register_vals[20]    infinity            16.42          infinity  (MET)
+pe_register_vals[21]    infinity            16.42          infinity  (MET)
+pe_register_vals[22]    infinity            16.42          infinity  (MET)
+pe_register_vals[23]    infinity            16.42          infinity  (MET)
+pe_register_vals[24]    infinity            16.42          infinity  (MET)
+pe_register_vals[25]    infinity            16.42          infinity  (MET)
+pe_register_vals[26]    infinity            16.42          infinity  (MET)
+pe_register_vals[27]    infinity            16.42          infinity  (MET)
+pe_register_vals[28]    infinity            16.42          infinity  (MET)
+pe_register_vals[29]    infinity            16.42          infinity  (MET)
+pe_register_vals[30]    infinity            16.42          infinity  (MET)
+pe_register_vals[31]    infinity            17.14          infinity  (MET)
+pe_register_vals[32]    infinity            16.42          infinity  (MET)
+pe_register_vals[33]    infinity            16.42          infinity  (MET)
+pe_register_vals[34]    infinity            16.42          infinity  (MET)
+pe_register_vals[35]    infinity            16.42          infinity  (MET)
+pe_register_vals[36]    infinity            16.42          infinity  (MET)
+pe_register_vals[37]    infinity            16.42          infinity  (MET)
+pe_register_vals[38]    infinity            16.42          infinity  (MET)
+pe_register_vals[39]    infinity            16.42          infinity  (MET)
+pe_register_vals[40]    infinity            16.42          infinity  (MET)
+pe_register_vals[41]    infinity            16.42          infinity  (MET)
+pe_register_vals[42]    infinity            16.42          infinity  (MET)
+pe_register_vals[43]    infinity            16.42          infinity  (MET)
+pe_register_vals[44]    infinity            16.42          infinity  (MET)
+pe_register_vals[45]    infinity            16.42          infinity  (MET)
+pe_register_vals[46]    infinity            16.42          infinity  (MET)
+pe_register_vals[47]    infinity            17.14          infinity  (MET)
+pe_register_vals[48]    infinity            16.42          infinity  (MET)
+pe_register_vals[49]    infinity            16.42          infinity  (MET)
+pe_register_vals[50]    infinity            16.42          infinity  (MET)
+pe_register_vals[51]    infinity            16.42          infinity  (MET)
+pe_register_vals[52]    infinity            16.42          infinity  (MET)
+pe_register_vals[53]    infinity            16.42          infinity  (MET)
+pe_register_vals[54]    infinity            16.42          infinity  (MET)
+pe_register_vals[55]    infinity            16.42          infinity  (MET)
+pe_register_vals[56]    infinity            16.42          infinity  (MET)
+pe_register_vals[57]    infinity            16.42          infinity  (MET)
+pe_register_vals[58]    infinity            16.42          infinity  (MET)
+pe_register_vals[59]    infinity            16.42          infinity  (MET)
+pe_register_vals[60]    infinity            16.42          infinity  (MET)
+pe_register_vals[61]    infinity            16.42          infinity  (MET)
+pe_register_vals[62]    infinity            16.42          infinity  (MET)
+pe_register_vals[63]    infinity            17.14          infinity  (MET)
+rst                     infinity             6.46          infinity  (MET)
+top_fwd[8]              infinity             1.31          infinity  (MET)
+top_fwd[9]              infinity             1.31          infinity  (MET)
+top_fwd[10]             infinity             1.31          infinity  (MET)
+top_fwd[11]             infinity             1.31          infinity  (MET)
+top_fwd[12]             infinity             1.31          infinity  (MET)
+top_fwd[13]             infinity             1.31          infinity  (MET)
+top_fwd[14]             infinity             1.31          infinity  (MET)
+top_fwd[15]             infinity             1.31          infinity  (MET)
+top_fwd[16]             infinity             1.31          infinity  (MET)
+top_fwd[17]             infinity             1.31          infinity  (MET)
+top_fwd[18]             infinity             1.31          infinity  (MET)
+top_fwd[19]             infinity             1.31          infinity  (MET)
+top_fwd[20]             infinity             1.31          infinity  (MET)
+top_fwd[21]             infinity             1.31          infinity  (MET)
+top_fwd[22]             infinity             1.31          infinity  (MET)
+top_fwd[23]             infinity             1.31          infinity  (MET)
+top_fwd[24]             infinity             1.31          infinity  (MET)
+top_fwd[25]             infinity             1.31          infinity  (MET)
+top_fwd[26]             infinity             1.31          infinity  (MET)
+top_fwd[27]             infinity             1.31          infinity  (MET)
+top_fwd[28]             infinity             1.31          infinity  (MET)
+top_fwd[29]             infinity             1.31          infinity  (MET)
+top_fwd[30]             infinity             1.31          infinity  (MET)
+top_fwd[31]             infinity             1.31          infinity  (MET)
+top_inputs[0]           infinity             0.49          infinity  (MET)
+top_inputs[1]           infinity             0.49          infinity  (MET)
+top_inputs[2]           infinity             0.49          infinity  (MET)
+top_inputs[3]           infinity             0.49          infinity  (MET)
+top_inputs[4]           infinity             0.49          infinity  (MET)
+top_inputs[5]           infinity             0.49          infinity  (MET)
+top_inputs[6]           infinity             0.49          infinity  (MET)
+top_inputs[7]           infinity             0.49          infinity  (MET)
+top_inputs[8]           infinity             1.31          infinity  (MET)
+top_inputs[9]           infinity             1.31          infinity  (MET)
+top_inputs[10]          infinity             1.31          infinity  (MET)
+top_inputs[11]          infinity             1.31          infinity  (MET)
+top_inputs[12]          infinity             1.31          infinity  (MET)
+top_inputs[13]          infinity             1.31          infinity  (MET)
+top_inputs[14]          infinity             1.31          infinity  (MET)
+top_inputs[15]          infinity             1.31          infinity  (MET)
+--------------------------------------------------------------------------------
+1

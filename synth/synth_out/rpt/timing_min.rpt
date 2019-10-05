@@ -1,0 +1,1869 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 50
+        -max_paths 50
+        -sort_by slack
+Design : systolic_array
+Version: J-2014.09
+Date   : Sun Feb 24 01:57:17 2019
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[0] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[0] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[1] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[1] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[2] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[2] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[3] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[3] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[4] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[4] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[5] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[5] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[6] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[6] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_2__buffer_inst_c/gen1_0__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_2__buffer_inst_c/gen1_0__buffer/out[7] (buffer1_WORD_SIZE8_54)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/in[7] (buffer1_WORD_SIZE8_53)
+                                                         0.000      9.683 f
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_2__buffer_inst_c/gen1_1__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[0] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[0] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[1] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[1] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[2] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[2] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[3] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[3] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[4] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[4] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[5] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[5] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[6] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[6] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_0__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_0__buffer/out[7] (buffer1_WORD_SIZE8_52)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/in[7] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[0] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[0] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[1] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[1] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[2] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[2] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[3] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[3] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[4] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[4] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[5] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[5] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[6] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[6] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_3__buffer_inst_c/gen1_1__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_3__buffer_inst_c/gen1_1__buffer/out[7] (buffer1_WORD_SIZE8_51)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/in[7] (buffer1_WORD_SIZE8_50)
+                                                         0.000      9.683 f
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_3__buffer_inst_c/gen1_2__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[0] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[0] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[1] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[1] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[2] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[2] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[3] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[3] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[4] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[4] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[5] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[5] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[6] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[6] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_0__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_0__buffer/out[7] (buffer1_WORD_SIZE8_49)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/in[7] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[0] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[0] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[1] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[1] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[2] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[2] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[3] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[3] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[4] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[4] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[5] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[5] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[6] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[6] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_1__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_1__buffer/out[7] (buffer1_WORD_SIZE8_48)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/in[7] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[0] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[0] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[1] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[1] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_2_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[2] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[2] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_2_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_2_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_3_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[3] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[3] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_3_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_3_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_4_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[4] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[4] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_4_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_4_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_5_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[5] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[5] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_5_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_5_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_6_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[6] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[6] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_6_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_6_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_4__buffer_inst_c/gen1_2__buffer/out_reg_7_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_4__buffer_inst_c/gen1_2__buffer/out[7] (buffer1_WORD_SIZE8_47)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/in[7] (buffer1_WORD_SIZE8_46)
+                                                         0.000      9.683 f
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_7_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_4__buffer_inst_c/gen1_3__buffer/out_reg_7_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_0_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_5__buffer_inst_c/gen1_0__buffer/out[0] (buffer1_WORD_SIZE8_45)
+                                                         0.000      9.683 f
+  gen1_5__buffer_inst_c/gen1_1__buffer/in[0] (buffer1_WORD_SIZE8_44)
+                                                         0.000      9.683 f
+  gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_0_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_0_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+  Startpoint: gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000 #    0.000 r
+  gen1_5__buffer_inst_c/gen1_0__buffer/out_reg_1_/Q (DFFRNQ_X1)
+                                                         9.683      9.683 f
+  gen1_5__buffer_inst_c/gen1_0__buffer/out[1] (buffer1_WORD_SIZE8_45)
+                                                         0.000      9.683 f
+  gen1_5__buffer_inst_c/gen1_1__buffer/in[1] (buffer1_WORD_SIZE8_44)
+                                                         0.000      9.683 f
+  gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_1_/D (DFFRNQ_X1)
+                                                         0.000      9.683 f
+  data arrival time                                                 9.683
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  gen1_5__buffer_inst_c/gen1_1__buffer/out_reg_1_/CLK (DFFRNQ_X1)
+                                                         0.000      0.200 r
+  library hold time                                      1.648      1.848
+  data required time                                                1.848
+  --------------------------------------------------------------------------
+  data required time                                                1.848
+  data arrival time                                                -9.683
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.835
+
+
+1

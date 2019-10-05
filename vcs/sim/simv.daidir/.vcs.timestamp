@@ -1,0 +1,109 @@
+0 
+31
++cli+4
++itf+/tools/synopsys/vcs/i201403/linux/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -fPIC -O -I/tools/synopsys/vcs/i201403/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=-m32 -m32
+-Mobjects= /tools/synopsys/vcs/i201403/linux/lib/libvirsim.so /tools/synopsys/vcs/i201403/linux/lib/librterrorinf.so /tools/synopsys/vcs/i201403/linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/tools/synopsys/vcs/i201403/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/tools/synopsys/vcs/i201403/linux/lib/ctype-stubs_32.a -ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-debug=4
+-debug_all
+-debug_obj
+-f ../filelist
+-gen_obj
+-line
+-picarchive
+-pp_used
+-sverilog
+/tools/synopsys/vcs/i201403/linux/bin/vcs1
+60
+sysc_uni_pwd=/nethome/dzuberi3/lab3-files/vcs/sim
+_LMFILES_=/etc/modulefiles/mpich-x86_64
+XILINXD_LICENSE_FILE=2100@ece-winlic.ece.gatech.edu
+VMR_MODE_FLAG=32
+VENDOR=unknown
+VCS_HOME=/tools/synopsys/vcs/i201403
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/tools/synopsys/vcs/i201403/linux
+SYNOPSYS=/tools/synopsys/vcs/i201403
+SSH_TTY=/dev/pts/33
+SSH_CONNECTION=143.215.28.178 57666 130.207.232.24 22
+SSH_CLIENT=143.215.28.178 57666 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPSLMD_LICENSE_FILE=1910@ece-winlic.ece.gatech.edu:/tools/synopsys/vcs/i201403/flexlm//license.dat
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=ipsec-143-215-28-178.vpn.gatech.edu
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+MPI_SYSCONFIG=/etc
+MPI_SUFFIX=_mpich
+MPI_PYTHON_SITEARCH=/usr/lib64/python2.6/site-packages/mpich
+MPI_MAN=/usr/share/man/mpich
+MPI_LIB=/usr/lib64/mpich/lib
+MPI_INCLUDE=/usr/include/mpich-x86_64
+MPI_HOME=/usr/lib64/mpich
+MPI_FORTRAN_MOD_DIR=/usr/lib64/gfortran/modules/mpich-x86_64
+MPI_COMPILER=mpich-x86_64
+MPI_BIN=/usr/lib64/mpich/bin
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MLM_LICENSE_FILE=1711@matlablic.ecs.gatech.edu
+MGLS_LICENSE_FILE=1717@ece-linlic.ece.gatech.edu
+MFLAGS=
+MALLOC_PERTURB_=142
+MALLOC_CHECK_=1
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=mpich-x86_64
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+G_SLICE=debug-blocks
+G_BROKEN_FILENAMES=1
+GROUP=2626-ece
+GOLDENGATE_LICENSE_FILE=1812@ece-linlic.ece.gatech.edu
+CVS_RSH=ssh
+COBBLER_SERVER=rhn-56.oit.gatech.edu
+CDS_LIC_FILE=5280@ecelinsvcs.ece.gatech.edu
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+AGILEESOFD_LICENSE_FILE=1812@ece-linlic.ece.gatech.edu
+0
+7
+1550726332 /nethome/dzuberi3/lab3-files/testbenches/systolic_array_tb.v
+1550787167 /nethome/dzuberi3/lab3-files/src/buffern.v
+1550769202 /nethome/dzuberi3/lab3-files/src/buffer1.v
+1550803703 /nethome/dzuberi3/lab3-files/src/systolic_array.v
+1550729858 /nethome/dzuberi3/lab3-files/src/mac_unit.v
+1550769162 ../filelist
+1393560725 /tools/synopsys/vcs/i201403/linux/lib/vcsdp.tab
+4
+0 
+1393563123 /tools/synopsys/vcs/i201403/linux/lib/libvirsim.so
+1393562941 /tools/synopsys/vcs/i201403/linux/lib/librterrorinf.so
+1393562829 /tools/synopsys/vcs/i201403/linux/lib/libsnpsmalloc.so
+1550803721 simv.daidir

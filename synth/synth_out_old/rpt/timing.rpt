@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : systolic_array
+Version: J-2014.09
+Date   : Thu Feb 21 21:49:33 2019
+****************************************
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: left_inputs[15]
+              (input port clocked by clk_input)
+  Endpoint: gen3_0__gen4_0__mac_inst/out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   50.00      50.00 r
+  left_inputs[15] (in)                                    0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/a[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3)
+                                                          0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/mult_23/A[0] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW02_mult_0)
+                                                          0.00      50.00 r
+  gen3_0__gen4_0__mac_inst/mult_23/U31/ZN (INV_X1)        5.50      55.50 f
+  gen3_0__gen4_0__mac_inst/mult_23/U120/ZN (NOR2_X1)      6.54      62.04 r
+  gen3_0__gen4_0__mac_inst/mult_23/U2/ZN (INV_X1)         2.56      64.60 f
+  gen3_0__gen4_0__mac_inst/mult_23/U24/ZN (NOR2_X1)       3.97      68.57 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_2_5/S (FA_X1)      14.52      83.09 f
+  gen3_0__gen4_0__mac_inst/mult_23/S2_3_4/S (FA_X1)      14.25      97.34 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_4_3/S (FA_X1)      13.95     111.29 f
+  gen3_0__gen4_0__mac_inst/mult_23/S2_5_2/S (FA_X1)      14.25     125.53 r
+  gen3_0__gen4_0__mac_inst/mult_23/S2_6_1/S (FA_X1)      13.95     139.49 f
+  gen3_0__gen4_0__mac_inst/mult_23/S4_0/S (FA_X1)        14.62     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/FS_1/A[5] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_1)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/FS_1/SUM[5] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_1)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/mult_23/PRODUCT[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW02_mult_0)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/add_24/A[7] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_0)
+                                                          0.00     154.11 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_7/CO (FA_X1)         9.22     163.33 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_8/CO (FA_X1)         8.98     172.30 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_9/CO (FA_X1)         8.98     181.28 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_10/CO (FA_X1)        8.98     190.26 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_11/CO (FA_X1)        8.98     199.24 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_12/CO (FA_X1)        8.98     208.22 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_13/CO (FA_X1)        8.98     217.19 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_14/CO (FA_X1)        8.98     226.17 r
+  gen3_0__gen4_0__mac_inst/add_24/U1_15/S (FA_X1)        13.35     239.52 f
+  gen3_0__gen4_0__mac_inst/add_24/SUM[15] (MAC_IN_WORD_SIZE8_OUT_WORD_SIZE16_3_DW01_add_0)
+                                                          0.00     239.52 f
+  gen3_0__gen4_0__mac_inst/out_reg_0_/D (DFFRNQ_X1)       0.00     239.52 f
+  data arrival time                                                239.52
+
+  clock clk_input (rise edge)                          1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  clock uncertainty                                      -0.20     999.80
+  gen3_0__gen4_0__mac_inst/out_reg_0_/CLK (DFFRNQ_X1)     0.00     999.80 r
+  library setup time                                     -7.56     992.24
+  data required time                                               992.24
+  --------------------------------------------------------------------------
+  data required time                                               992.24
+  data arrival time                                               -239.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                      752.71
+
+
+1
